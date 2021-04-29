@@ -1,0 +1,17 @@
+using System;
+class Program
+    {
+        
+        public static Tuple<double,double>AddMulti(double a,double b)
+        {
+            return new Tuple<double,double>((a+b),(a*b));
+        }
+
+    public static void Main() 
+    { 
+       
+        Tuple<double,double>output=Program.AddMulti(3, 2);
+        Console.WriteLine("sum="+output.Item1+"Multipliation Value="+output.Item2);
+    }   
+    }
+   

@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Day6
+{
+    class Program
+    {
+        static void Main()
+        {
+           Dictionary<int,string>keyValuePairs= new Dictionary<int,string>();
+           keyValuePairs.Add(1,"vcccc");
+           keyValuePairs.Add(2,"bbbbb");
+           keyValuePairs.Add(3,"aaaaaa");
+           if(keyValuePairs.ContainsKey(1))
+           {
+               Console.WriteLine("key found");
+           }
+           else
+           {
+               Console.WriteLine("not found");
+           }
+           if(keyValuePairs.ContainsValue("vcccc"))
+           {
+               Console.WriteLine("value found");
+           }
+           else
+           {
+               Console.WriteLine("value not found");
+           }
+           
+        }
+    }
+}
